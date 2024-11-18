@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Better VCR";
+    src: url("./font/BetterVCR.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body {
+    background-color: #0a080b;
+    color: #56f8bd;
+    font-family: "Better VCR";
+    font-weight: 400;
+    letter-spacing: 0rem;
+  }
+
+  .font-24 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .font-20 {
+    font-size: 1.25rem;
+  }
+
+  .font-18 {
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+  }
+
+  .font-16 {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+}
+
+@layer components {
+  a {
+    color: #007e7d;
+  }
+
+  nav a {
+    color: #56f8bd;
+  }
+
+  .link-active {
+    text-transform: uppercase;
+    border: #56f8bd 0.0625rem solid;
+    padding: 0.3125rem 0.625rem;
+  }
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 825px) {
+  .contain {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: number-input;
+  -moz-appearance: number-input;
+}
+
+.active {
+  height: fit-content;
+  opacity: 1;
+  display: grid;
+}
+
+.answer {
+  margin-left: 3.125rem;
+  margin-top: 0.9375rem;
+}

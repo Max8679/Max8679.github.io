@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
+    <style>
+      html {
+        font-size: calc(0.00011829944547148141rem + 1.1711645101663584vw);
+      }
+      @media screen and (max-width: 1366px) {
+        html {
+          font-size: calc(0.00011829944547137039rem + 1.1711645101663586vw);
+        }
+      }
+      @media screen and (max-width: 825px) {
+        html {
+          font-size: calc(-0.0021186440677967155rem + 1.9435028248587574vw);
+        }
+      }
+      @media screen and (max-width: 471px) {
+        html {
+          font-size: calc(-0.002127659574468085rem + 3.404255319148936vw);
+        }
+      }
+    </style>
+    <title>Profile</title>
+  </head>
+  <body>
+    <header class="contain mb-[1.875rem]">
+      <nav
+        class="desk:justify-between tab:justify-center desk:my-[1.875rem] desk:font-20 font-16 tab:my-[1.875rem] tab:mb-[1.875rem] relative mt-[0.9375rem] flex w-full items-center"
+      >
+        <ul
+          class="desk:gap-[3.25rem] tab:flex tab:items-center tab:justify-center grid w-full grid-cols-3 grid-rows-2 gap-y-[1.5625rem]"
+        >
+          <li>
+            <a
+              href="./profile.html"
+              class="tab:w-[8.0625rem] desk:mr-[5.25rem] tab:h-[4.0625rem] block h-11 w-[5.6875rem]"
+            >
+              <img src="../img/logo.svg" alt="" class="h-full w-full" />
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="./people.html" class="font-20 tab:hidden desk:inline"
+              >People</a
+            >
+          </li>
+          <li class="flex items-center justify-end">
+            <a
+              href="./profile.html"
+              class="font-20 tab:hidden desk:inline desk:link-active"
+              >Profile</a
+            >
+          </li>
+          <li class="flex items-center">
+            <a href="./messages.html" class="font-20 tab:hidden desk:inline"
+              >Messages</a
+            >
+          </li>
+          <li class="flex items-center justify-end">
+            <a href="./friends.html" class="font-20 tab:hidden desk:inline"
+              >Friends</a
+            >
+          </li>
+          <li class="flex items-center justify-end">
+            <a href="./news.html" class="font-20 tab:hidden desk:inline"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="./help.html" class="font-20 desk:inline hidden">Help</a>
+          </li>
+          <li><a href="#" class="font-20 desk:inline hidden">Log out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contain">
+      <section class="desk:flex-row flex flex-col gap-[1.875rem]">
+        <div
+          class="border-green desk:w-[25.625rem] desk:flex desk:flex-col tab:grid tab:grid-rows-2 tab:grid-cols-2 tab:pb-0 desk:pb-[1.875rem] flex h-fit flex-col gap-[2.0625rem] border p-[1.875rem]"
+        >
+          <div>
+            <div class="mb-[2.0625rem] flex gap-10">
+              <img src="../img/icon.svg" alt="" class="h-[8.5rem] w-[8.5rem]" />
+              <div>
+                <p class="font-24 mb-[0.9375rem]">Ivan Petrov</p>
+                <p class="font-18">online</p>
+              </div>
+            </div>
+            <div class="border-violet h-[1.6875rem] w-full border">
+              <div class="bg-violet h-full w-20"></div>
+            </div>
+          </div>
+          <div class="row-span-2">
+            <div class="tab:flex desk:flex-col">
+              <div
+                class="bg-green tab:h-[24.5rem] tab:mr-[1.9063rem] desk:mr-0 desk:h-[0.0625rem] desk:w-full tab:w-[0.0625rem] h-[0.0625rem] w-full"
+              ></div>
+              <ul
+                class="desk:mt-[2.0625rem] tab:mt-0 mt-[2.0625rem] flex flex-col gap-[0.3125rem]"
+              >
+                <li class="font-24">man</li>
+                <li class="font-24">25 years</li>
+                <li class="font-24">Moscow region</li>
+                <li class="font-24">Zelenograd</li>
+                <li class="font-24">Russia</li>
+                <li class="font-24">Ball Earth</li>
+                <li class="font-24">Engineer</li>
+                <li class="font-24">Composer</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="bg-green h-[0.0625rem] w-full"></div>
+            <div class="mt-[2.0625rem] flex flex-col gap-[0.3125rem]">
+              <a href="" class="text-green">
+                <div class="flex justify-between">
+                  <p class="font-24">Friends</p>
+                  <p class="font-24">17</p>
+                </div>
+              </a>
+              <a href="" class="font-24 text-green">Messages</a>
+              <a href="" class="font-24 text-green">Edit profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="desk:w-[50.375rem]">
+          <form action="POST">
+            <div class="relative">
+              <textarea
+                name="Help"
+                id="help"
+                class="border-green h-[7.375rem] w-full resize-none border bg-black p-[0.9375rem] outline-none"
+              ></textarea>
+              <button
+                class="font-24 absolute bottom-0 right-[1.875rem] -translate-y-1/2 transform"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+          <p class="font-16 my-[2rem]"><span>157</span> posts</p>
+          <div>
+            <div class="font-16 desk:p-[1.875rem]">
+              <div>
+                <div class="flex flex-col gap-y-[2ch]">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <a href="https://www.google.com/"
+                      >https://www.google.com/</a
+                    >
+                  </p>
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div
+                  class="font-20 tab:grid-cols-2 tab:ml-[1.875rem] tab:grid-rows-1 my-[1.875rem] grid grid-rows-2 gap-[0.9375rem]"
+                >
+                  <div class="text-darkgreen tab:text-green flex gap-[1ch]">
+                    <p>7</p>
+                    <p>comments</p>
+                  </div>
+                  <div
+                    class="tab:justify-end tab:row-auto row-start-1 flex gap-[1ch]"
+                  >
+                    <p>11.03.23</p>
+                    <p>7:20pm</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="bg-green tab:ml-[1.875rem] h-[0.0625rem]"></div>
+                  <div class="tab:ml-[1.875rem] mt-[1.875rem]">
+                    <div class="mb-[0.9375rem] flex items-center">
+                      <img
+                        src="./../img/white-square.png"
+                        class="h-[2.8125rem] w-[2.8125rem]"
+                        alt="avatar"
+                      />
+                      <p class="font-20 ml-[0.9375rem]">Reddi</p>
+                    </div>
+                    <div class="font-18 flex justify-between">
+                      <p>Oh, it’s interesting!</p>
+                      <button>answer</button>
+                    </div>
+                    <div class="answer">
+                      <div class="mb-[0.9375rem] flex items-center">
+                        <img
+                          src="./../img/white-square.png"
+                          class="h-[2.8125rem] w-[2.8125rem]"
+                          alt="avatar"
+                        />
+                        <p class="font-20 ml-[0.9375rem]">Mary</p>
+                      </div>
+                      <div class="font-18 flex justify-between">
+                        <p>Thank you!</p>
+                        <button>answer</button>
+                      </div>
+                    </div>
+                  </div>
+                  <form action="POST">
+                    <div class="tab:ml-[1.875rem] relative mt-[1.875rem]">
+                      <textarea
+                        name="Comment"
+                        id="comment"
+                        class="border-green font-20 h-[5.25rem] w-full resize-none border bg-black py-[0.9375rem] pl-[0.9375rem] pr-[6.375rem] outline-none"
+                      ></textarea>
+                      <button
+                        class="font-24 absolute right-[0.9375rem] top-[1.375rem] overflow-auto"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="font-16 my-[2.5rem] text-center leading-[1.875rem]">
+        Aria <span class="font-20 leading-[1.875rem]">©</span> 2020 -
+      </p>
+    </footer>
+  </body>
+</html>

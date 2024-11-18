@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      html {
+        font-size: calc(0.00011829944547148141rem + 1.1711645101663584vw);
+      }
+      @media screen and (max-width: 1366px) {
+        html {
+          font-size: calc(0.00011829944547137039rem + 1.1711645101663586vw);
+        }
+      }
+      @media screen and (max-width: 825px) {
+        html {
+          font-size: calc(-0.0021186440677967155rem + 1.9435028248587574vw);
+        }
+      }
+      @media screen and (max-width: 471px) {
+        html {
+          font-size: calc(-0.002127659574468085rem + 3.404255319148936vw);
+        }
+      }
+    </style>
+    <title>Help</title>
+  </head>
+  <body class="flex h-screen flex-col justify-between">
+    <main class="contain h-full">
+      <section class="flex flex-col pt-[3.75rem]">
+        <form id="helpForm" action="POST" class="h-[80vh]">
+          <textarea
+            name="Help"
+            id="help"
+            autofocus
+            class="h-full w-full resize-none bg-black p-[0.9375rem] outline-none"
+          ></textarea>
+        </form>
+      </section>
+    </main>
+    <footer class="contain mb-[2.5rem]">
+      <div class="mr-[1.875rem] flex items-center justify-end">
+        <p class="font-16 leading-[1.875rem]">
+          Aria <span class="font-20 leading-[1.875rem]">©</span> 2020 -
+        </p>
+        <div class="font-24 ml-[20.125rem]">
+          <button form="helpForm" class="uppercase">Send</button>
+          <a href="./profile.html" class="text-green ml-[1.875rem] uppercase"
+            >Main</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
